@@ -17,4 +17,4 @@ jobs:
         with:
           url: 'https://afc8-2001-b07-5d29-eaa8-39ad-3b3b-ff4c-d6bb.ngrok-free.app/api/webhooks/knowhow/channels/5886072B-AE11-4BF0-5FB6-08DBA2977582/feedback'
           headers: '{"Pat": "12f37b77d2a344f48fde7ca0d5531be3"}'
-          body: '{"event": "deployment", "repository": "joelwmale/webhook-action"}'  
+          body: '{"commit": "${{ github.event.head_commit.message }}"}'  
